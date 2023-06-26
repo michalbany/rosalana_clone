@@ -1,0 +1,205 @@
+@import url('library.css');
+
+
+
+body{
+    background-color: var(--gray);
+    display: grid;
+    grid-template-columns: .7fr;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0;
+    height: 100vh;
+
+}
+
+
+.footer{
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer p{
+    font-size: .8rem;
+    font-weight: 400;
+    margin: 0 10px;
+}
+
+.footer a{
+    color : var(--black);
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 400;
+    margin: 0 10px;
+    transition: .2s ease;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+.container{
+    /*celovy box*/
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 700px;
+    display: grid;
+    border-radius: 20px;
+    grid-template-columns: 3fr 4fr;
+    background-color: var(--white);
+}
+
+.image{
+    background-image: url('/images/login.jpg');
+    background-size: cover;
+    background-position: right 20% center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.button-action{
+    width: 100%;
+}
+
+.overlay{
+    width: 100%;
+    border-radius: 20px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.overlay h3{
+    /*nadpis*/
+    color: var(--white);
+    font-size: 2rem;
+    margin: 0px 0px 30px 30px;
+    width: 300px;
+    font-weight: 400;
+    line-height: 3rem;
+    border-bottom: 3px solid var(--purple);
+}
+
+.overlay p{
+    /*podnadpis*/
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 10px 30px;
+    margin-bottom: 60px;
+}
+
+img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+:root.dark-mode img{
+    filter: invert(1);
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.title{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.card{
+    width: 280px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+.nextToBar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0 10px 0px;
+    position: relative;
+}
+
+.nextToBar .text-secondary{
+    font-size: .8rem;
+}
+
+
+/*NOTE: konec stylů pro login*/
+
+/*NOTE: začátek stylů pro vertify email*/
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid var(--ultralightblack);
+    border-radius: 10px;
+    padding: 10px 0px;
+    margin-top: 30px;
+}
+
+.user-info form{
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.user-info span{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 10px 20px;
+}
+
+.user-info a{
+    color: var(--purple);
+    font-size: .9rem;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 10px 20px;
+}
+
+.user-info a:hover{
+    text-decoration: underline;
+}
+
+#verifyLink{
+    margin: 0;
+}
